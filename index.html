@@ -61,7 +61,7 @@
         <section class="main">
             <div class="container">
             <h1 class="main-heading">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="button-offer" data-modal-open>Заказать услугу</button>
+            <button type="button" class="main-heading-button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <!--Our advantages section-->
@@ -380,7 +380,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-contacts">
-                    <a href="./index.html" class="logo-link-footer"><span class="logo-web">Web</span>Studio</a>
+                    <a href="./index.html" class="logo-link logo-link__footer"><span class="logo-web">Web</span>Studio</a>
                     <address class="address">
                         <ul class="address-list">
                             <li class="address-item"> 
@@ -431,12 +431,14 @@
                 <div>
                     <p class="footer-subscribe">Подпишитесь на рассылку</p>
                     <form class="footer-form">
-                        <label>
+                        <label class="footer-label">
                             <input class="footer-subscribe-form" type="email" placeholder="E-mail">
                         </label>
                         <button class="footer-subscribe-button" type="submit">
                             Подписаться
-                            <img class="footer-subscribe-img" src="./images/icon send.png" alt="subscribe-icon">
+                            <svg class="footer-subscribe-img">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
                         </button>
                     </form>
                 </div>
@@ -464,7 +466,7 @@
                     <svg class="form-icon phone">
                         <use href="./images/icons.svg#icon-phone-form"></use>
                     </svg>
-                    <input class="area" type="number" name="tel">
+                    <input class="area" type="tel" name="tel">
                 </label>                
                 <label class="form-element">
                     <span class="label-title">Почта</span> 
@@ -473,12 +475,12 @@
                     </svg>
                     <input class="area" type="email" name="email">
                 </label>                
-                <label>
+                <label class="comment-label">
                     <span class="label-title">Комментарий</span> 
-                    <input class="comment-area" type="textarea" name="comment" placeholder="Введите текст">
+                    <textarea class="comment-area" type="textarea" name="comment" placeholder="Введите текст"></textarea>
                 </label>               
                 <label class="checkbox-label">
-                    <input class="checkbox" type="checkbox" name="checkbox" checked>
+                    <input class="checkbox" type="checkbox" name="checkbox">
                     <span class="checkbox-custom"></span>
                     <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю <a class="rules-link" href="">Условия договора</a></span> 
                 </label>                
