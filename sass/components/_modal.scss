@@ -212,7 +212,7 @@
         letter-spacing: 0.03em;
     }
     &:checked + &-custom{
-        background-image: url(../images/Vector7.svg);
+        background-image: url(/images/Vector7.svg);
         background-repeat: no-repeat;
         background-color: getColor('button-and-logo-color');
         border-color: getColor('button-and-logo-color');

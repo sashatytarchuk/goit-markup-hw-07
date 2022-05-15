@@ -7,6 +7,33 @@
     }
 }
 
+.filter-button {
+    background-color: getColor('inactive-button-color');
+    padding: 6px 22px;
+    height: 38px;
+    color: getColor('headings-color');
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.63;
+    border: getColor('inactive-button-color');
+    border-radius: 4px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    transition-property: background-color, transform, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+    &:hover, &:focus{
+        background-color: getColor('button-hover-color');
+        color: getColor('white-color');
+        box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1),
+                    0 1px 2px rgba(0, 0, 0, 0.08),
+                    0 2px 2px rgba(0, 0, 0, 0.12);
+        transform: translateY(-10%);
+    }
+}
+
 .filter-cards-list {
     display: flex;
     flex-wrap: wrap;
